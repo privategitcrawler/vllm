@@ -30,8 +30,8 @@ WORKDIR /vllm-workspace
 # transformers是vLLM的常用依赖，建议显式安装。
 RUN pip3 install --no-cache-dir --upgrade pip && \
     pip3 install --no-cache-dir \
-    vllm==0.5.1 \
-    transformers==4.41.2
+    vllm==0.9.2 \
+    transformers==4.53.1
 
 # --- 阶段 4: 配置容器 ---
 # 声明服务将监听8000端口。这主要用于文档和自动化工具。
