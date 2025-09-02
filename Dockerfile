@@ -17,7 +17,7 @@ ENV TZ=Etc/UTC
 # 最后清理apt缓存，减小镜像体积。
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    python3.10 \
+    python3.12 \
     python3-pip \
     git \
     && rm -rf /var/lib/apt/lists/*
